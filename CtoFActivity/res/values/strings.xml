@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Car Rental Reservation System</string>
+    <string name="app_name">Car Rental Reservation System</string>
+    <string name="create_Account">Create Account</string>
+    <string name="about_title">Create Account</string>
+	<string name="make_Reservation">Make Reservation</string>
+	<string name="cancel_Reservation">Cancel Reservation</string>
+	<string name="about_button_label">About</string>
+	<string name="about_label">Create Account: Please enter a username and password.</string>
+	<string name="makeRes_title">Make Reservation</string>
+	<string name="cancelRes_title">Cancel Reservation</string>
+	<string name="manageSystem_title">Manage System</string>
+	<string name="userName_label">Username: </string>
+	<string name="pickupDate_label">Pickup Date and Time: </string>
+	<string name="returnDate_label">Return Date and Time: </string>
+	<string name="carType_label">Car: </string>
+	<string name="resNum_label">Reservation Number: </string>
+	<string name="totalAmount_label">Total: $</string>
+	<string name="currentTime_label">Current Time: </string>
+	
+	
+	
+	
+
+</resources>

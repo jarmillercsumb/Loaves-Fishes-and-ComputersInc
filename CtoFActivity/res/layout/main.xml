@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/apple"
+    android:orientation="vertical"
+    android:padding="30dip" >
+
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:text="Main Menu"
+        android:textSize="35sp" />
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       />
+     
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/hello"
+        android:textSize="18.8sp" />
+
+    <Button
+       android:id="@+id/create_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/create_Account" />
+
+    <Button
+       android:id="@+id/make_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/make_Reservation" />  
+       
+    <Button
+       android:id="@+id/cancel_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/cancel_Reservation"  />
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        
+        android:text=""
+        android:textSize="20.5sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="20.5sp" />
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="20.5sp" />
+     
+       <ImageView 
+   android:id="@+id/test_image"
+   android:src="@drawable/road"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   />
+     
+</LinearLayout>

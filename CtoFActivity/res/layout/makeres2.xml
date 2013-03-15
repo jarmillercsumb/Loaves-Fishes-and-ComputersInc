@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/apple"
+    android:padding="15dip">
+
+ <TextView
+      android:id="@+id/about_textview"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#ffffff"
+      android:text="These Vehicles Are Available"
+       android:textSize="16sp" />
+
+ <Button
+     android:id="@+id/checkBox1" 
+	android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+     android:textColor="#ff000000"
+     android:text="Minivan ($50.00 per day)" />
+ <ImageView
+     android:id="@+id/test_image"
+     android:layout_width="313dp"
+     android:layout_height="76dp"
+     android:src="@drawable/mini" />
+
+ <Button
+     android:id="@+id/checkBox2"
+    android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+     android:textColor="#ff000000"
+     android:text="Sedan ($25.00 per day)" />
+
+   <ImageView
+       android:id="@+id/test_image"
+        android:layout_width="313dp"
+     android:layout_height="76dp"
+       android:src="@drawable/sedan" />
+
+   <Button
+       android:id="@+id/checkBox3"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:textColor="#ff000000"
+       android:text="Truck ($35.00 per day)" />
+ 
+   <ImageView 
+   android:id="@+id/test_image"
+   android:src="@drawable/truck"
+    android:layout_width="313dp"
+     android:layout_height="76dp"
+   />
+
+<Button
+       android:id="@+id/nextRes2_button"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Next"  />
+</LinearLayout>

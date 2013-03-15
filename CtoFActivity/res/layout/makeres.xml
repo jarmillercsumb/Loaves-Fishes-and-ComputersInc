@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/apple"
+    android:fillViewport="true" >  
+<LinearLayout
+	android:id="@+id/widget28"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <TextView
+		android:id="@+id/lblPickup"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+		android:text="Please Choose A Pickup Date and Time:">
+	</TextView>
+	<TextView
+		android:id="@+id/lblDateAndTime"
+		android:layout_width="fill_parent"
+		android:layout_height="47px"
+		android:background="#bebebe"
+		android:textColor="#ff000000"
+		android:layout_gravity="center"
+		android:textStyle="bold">
+	</TextView>
+	<Button
+		android:id="@+id/btnDate"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Please Choose a Pickup Date">
+	</Button>
+	
+	<Button
+		android:id="@+id/btnTime"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Please Choose a Pickup Time">
+	</Button>
+
+	
+	 <TextView
+		android:id="@+id/lblReturn"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+		android:text="Please Choose A Return Date and Time:">
+	</TextView>
+	
+
+	<TextView
+		android:id="@+id/lblReturnDateAndTime"
+		android:layout_width="fill_parent"
+		android:layout_height="47px"
+		android:textColor="#ff000000"
+		android:background="#bebebe"
+		android:textStyle="bold">
+	</TextView>
+	<Button
+		android:id="@+id/rtnDate"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Please Choose a Return Date">
+	</Button>
+	
+	<Button
+		android:id="@+id/rtnTime"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Please Choose a Return Time">
+	</Button>
+	
+	<TextView
+		android:id="@+id/lblReturnDateAndTime"
+		android:layout_width="fill_parent"
+		android:layout_height="47px"
+		>
+	</TextView>
+	
+		<Button
+		android:id="@+id/next_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Next">
+	</Button>
+	
+	<TextView
+		android:id="@+id/lblReturnDateAndTime"
+		android:layout_width="fill_parent"
+		android:layout_height="47px">
+	</TextView>
+
+	<TextView
+		android:id="@+id/lblReturnDateAndTime"
+		android:layout_width="fill_parent"
+		android:layout_height="47px"
+		>
+	</TextView>
+	
+
+
+	
+	
+	
+</LinearLayout>
+</ScrollView>

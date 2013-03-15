@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/apple"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    
+    <TextView
+        android:id="@+id/Something"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:text="Confirmation"
+        android:textSize="35sp"
+        android:textColor="#ffffff" />
+
+        
+        
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userName_label"
+
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/pickupDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pickupDate_label"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/returnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returnDate_label"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/carType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carType_label"
+        android:textColor="#ffffff" />
+     <TextView
+        android:id="@+id/resNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resNum_label"
+        android:textColor="#ffffff" />
+      <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalAmount_label"
+        android:textColor="#ffffff" />
+      
+       <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/currentTime_label"
+        android:textColor="#ffffff" />
+    
+
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm" />
+    
+      <ImageView 
+   android:id="@+id/test_image"
+   android:src="@drawable/check"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/apple"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    
+     <TextView
+        android:id="@+id/about_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These Are The Reservations Associated With The Account: "
+        android:textColor="#ffffff" />
+    
+     <TextView
+        android:id="@+id/reservat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1000"
+        android:text=""
+        android:textColor="#ffffff" />
+     
+       <TextView
+        android:id="@+id/reservat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ />
+    
+     <TextView
+        android:id="@+id/about_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter A Reservation Number To Cancel: "
+        android:textColor="#ffffff" />
+	<EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+	
+	<Button 
+	      android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:text="Next"/>
+        
+</LinearLayout>
