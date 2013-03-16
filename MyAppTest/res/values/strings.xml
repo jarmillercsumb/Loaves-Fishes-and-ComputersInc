@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Loaves, Fishes &amp; Computers</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Main_Menu">Main Menu</string>
+    <string name="AboutText">The primary mission of Loaves, Fishes and Computers, Inc. is to provide computer technologies, knowledge and assistance to those who cannot otherwise afford them, primarily low-income families, students, the disadvantaged, the elderly, and the disabled. \n  \n By keeping computers out of the landfill, LFC promotes environmental stewardship, simultaneously providing a place for volunteers to learn, share and help their community. \n \n E-mail us at info@loavesfishescomputers.org</string>
+	<string name="LocationText">You\'ll find us at: \n 348 Roberts Ave \n Seaside, CA, 93955</string>
+</resources>
