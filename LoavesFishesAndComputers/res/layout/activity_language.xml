@@ -23,6 +23,7 @@
         android:layout_above="@+id/spanish_button"
         android:layout_alignLeft="@+id/spanish_button"
         android:layout_marginBottom="43dp"
+        android:onClick="sendMessage"
         android:text="English"
         android:textSize="30sp" />
 
