@@ -1,0 +1,26 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal"
+    >
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_marginBottom = "8dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:minHeight="115dp" 
+        android:minWidth="115dp"
+        android:maxHeight="115dp" 
+        android:maxWidth="115dp" >
+    </ImageView>
+
+	<TextView
+	    android:id="@+id/icon_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
