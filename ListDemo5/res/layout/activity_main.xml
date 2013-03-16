@@ -31,16 +31,16 @@
             
 		<TextView
 			android:id="@+id/cat1"
-			android:layout_marginLeft="10dp"
+			android:layout_marginLeft="10dp" 
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/topic1desc"
+	        android:text="@string/help_virus"
 	        android:clickable="true"
 	        android:drawableLeft="@drawable/pic1"
 	        android:drawablePadding="10dp"
 	        android:layout_marginBottom="20dp"
 	        android:textSize="12sp"
-	        android:onClick="goToCategory" />
+	        android:onClick="getPageVirus" />
 		
 		
 		<TextView
@@ -48,13 +48,13 @@
 			android:layout_marginLeft="10dp"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/topic2desc"
+	        android:text="@string/help_slow"
 	        android:clickable="true"
 	        android:drawableLeft="@drawable/pic1"
 	        android:drawablePadding="10dp"
 	        android:layout_marginBottom="20dp"
 	        android:textSize="12sp"
-	        android:onClick="goToCategory" />
+	        android:onClick="getPageSlow" />
 		
 		
 		<TextView
@@ -62,52 +62,52 @@
 			android:layout_marginLeft="10dp"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/topic3desc"
+	        android:text="@string/help_guard"
 	        android:clickable="true"
 	        android:drawableLeft="@drawable/pic1"
 	        android:drawablePadding="10dp"
 	        android:layout_marginBottom="20dp"
 	        android:textSize="12sp"
-	        android:onClick="goToCategory" />
+	        android:onClick="getPageGuard" />
 		
 		<TextView
 			android:id="@+id/cat4"
 			android:layout_marginLeft="10dp"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/topic4desc"
+	        android:text="@string/help_internet"
 	        android:clickable="true"
 	        android:drawableLeft="@drawable/pic1"
 	        android:drawablePadding="10dp"
 	        android:layout_marginBottom="20dp"
 	        android:textSize="12sp"
-	        android:onClick="goToCategory" />
+	        android:onClick="getPageInternet" />
 		
 		<TextView
 			android:id="@+id/cat5"
 			android:layout_marginLeft="10dp"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/topic5desc"
+	        android:text="@string/help_google"
 	        android:clickable="true"
 	        android:drawableLeft="@drawable/pic1"
 	        android:drawablePadding="10dp"
 	        android:layout_marginBottom="20dp"
 	        android:textSize="12sp"
-	        android:onClick="goToCategory" />
+	        android:onClick="getPageGoogle" />
 		
 		<TextView
 			android:id="@+id/cat6"
 			android:layout_marginLeft="10dp"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/topic6desc"
+	        android:text="@string/more_topics"
 	        android:clickable="true"
 	        android:drawableLeft="@drawable/pic1"
 	        android:drawablePadding="10dp"
 	        android:layout_marginBottom="20dp"
 	        android:textSize="12sp"
-	        android:onClick="goToCategory" />
+	        android:onClick="getPageTopics" />
         </LinearLayout>
 
         

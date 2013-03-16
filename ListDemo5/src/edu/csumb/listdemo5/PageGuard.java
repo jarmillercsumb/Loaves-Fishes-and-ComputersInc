@@ -10,12 +10,12 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 
-public class Category extends Activity {
+public class PageGuard extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_category);
+		setContentView(R.layout.activity_page_guard);
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
@@ -33,7 +33,7 @@ public class Category extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.category, menu);
+		getMenuInflater().inflate(R.menu.help_topic, menu);
 		return true;
 	}
 
@@ -54,8 +54,26 @@ public class Category extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void goToTopic(View view) {
-		Intent intent = new Intent(this, HelpTopic.class);
+	public void prevPage(View view) {
+		/*Intent intent = new Intent(this, HelpTopic.class);
+		EditText editText = (EditText) findViewById(R.id.edit_message);
+	    String message = editText.getText().toString();
+	    intent.putExtra(EXTRA_MESSAGE, message); 
+	    startActivity(intent);*/
+	}
+
+	
+	public void nextPage(View view) {
+		/*Intent intent = new Intent(this, HelpTopic.class);
+		EditText editText = (EditText) findViewById(R.id.edit_message);
+	    String message = editText.getText().toString();
+	    intent.putExtra(EXTRA_MESSAGE, message); 
+	    startActivity(intent);*/
+	}
+
+	
+	public void topicsPage(View view) {
+		Intent intent = new Intent(this, PageMoreTopics.class);
 		/*EditText editText = (EditText) findViewById(R.id.edit_message);
 	    String message = editText.getText().toString();
 	    intent.putExtra(EXTRA_MESSAGE, message);*/ 

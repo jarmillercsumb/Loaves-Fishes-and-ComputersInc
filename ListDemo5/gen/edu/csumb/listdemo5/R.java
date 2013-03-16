@@ -27,29 +27,39 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f08000d;
-        public static final int cat1=0x7f080007;
-        public static final int cat2=0x7f080008;
-        public static final int cat3=0x7f080009;
-        public static final int cat4=0x7f08000a;
-        public static final int cat5=0x7f08000b;
-        public static final int cat6=0x7f08000c;
-        public static final int image=0x7f080006;
+        public static final int cat1=0x7f080003;
+        public static final int cat2=0x7f080004;
+        public static final int cat3=0x7f080005;
+        public static final int cat4=0x7f080006;
+        public static final int cat5=0x7f080007;
+        public static final int cat6=0x7f080008;
+        public static final int image=0x7f080002;
         public static final int scrollView1=0x7f080000;
-        public static final int title_categories=0x7f080005;
-        public static final int title_topic=0x7f080001;
-        public static final int topic1=0x7f080002;
-        public static final int topic2=0x7f080003;
-        public static final int topic3=0x7f080004;
+        public static final int title_categories=0x7f080001;
+        public static final int title_topic=0x7f080009;
+        public static final int topic1=0x7f08000a;
+        public static final int topic2=0x7f08000b;
+        public static final int topic3=0x7f08000c;
     }
     public static final class layout {
-        public static final int activity_category=0x7f030000;
-        public static final int activity_help_topic=0x7f030001;
-        public static final int activity_main=0x7f030002;
+        public static final int activity_help_topic=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_more_topics=0x7f030002;
+        public static final int activity_page_google=0x7f030003;
+        public static final int activity_page_guard=0x7f030004;
+        public static final int activity_page_internet=0x7f030005;
+        public static final int activity_page_slow=0x7f030006;
+        public static final int activity_page_virus=0x7f030007;
     }
     public static final class menu {
         public static final int category=0x7f070000;
         public static final int help_topic=0x7f070001;
         public static final int main=0x7f070002;
+        public static final int page_gaurd=0x7f070003;
+        public static final int page_google=0x7f070004;
+        public static final int page_internet=0x7f070005;
+        public static final int page_slow=0x7f070006;
+        public static final int page_virus=0x7f070007;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -60,22 +70,27 @@ public final class R {
         public static final int categories=0x7f050003;
         public static final int desc=0x7f050004;
         public static final int hello_world=0x7f050002;
+        public static final int help_google=0x7f050009;
+        public static final int help_guard=0x7f050007;
+        public static final int help_internet=0x7f050008;
+        public static final int help_slow=0x7f050006;
+        public static final int help_virus=0x7f050005;
+        public static final int more_topics=0x7f05000a;
         public static final int title_activity_category=0x7f05000b;
-        public static final int title_activity_help_topic=0x7f050010;
+        public static final int title_activity_help_topic=0x7f050011;
+        public static final int title_activity_page_gaurd=0x7f05001a;
+        public static final int title_activity_page_google=0x7f05001c;
+        public static final int title_activity_page_internet=0x7f05001b;
+        public static final int title_activity_page_slow=0x7f050019;
+        public static final int title_activity_page_virus=0x7f050018;
         public static final int title_category=0x7f05000c;
-        public static final int topic1desc=0x7f050005;
-        public static final int topic1title=0x7f05000d;
-        public static final int topic2desc=0x7f050006;
-        public static final int topic2title=0x7f05000e;
-        public static final int topic3desc=0x7f050007;
-        public static final int topic3title=0x7f05000f;
-        public static final int topic4desc=0x7f050008;
-        public static final int topic5desc=0x7f050009;
-        public static final int topic6desc=0x7f05000a;
+        public static final int topic1title=0x7f05000e;
+        public static final int topic2title=0x7f05000f;
+        public static final int topic3title=0x7f050010;
         public static final int topic_string_1=0x7f050012;
         public static final int topic_string_2=0x7f050013;
         public static final int topic_string_3=0x7f050014;
-        public static final int topic_title=0x7f050011;
+        public static final int topic_title=0x7f05000d;
     }
     public static final class style {
         /** 

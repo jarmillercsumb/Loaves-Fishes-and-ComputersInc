@@ -10,12 +10,12 @@ import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 
-public class HelpTopic extends Activity {
+public class PageSlow extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_help_topic);
+		setContentView(R.layout.activity_page_slow);
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
@@ -79,6 +79,5 @@ public class HelpTopic extends Activity {
 	    intent.putExtra(EXTRA_MESSAGE, message);*/ 
 	    startActivity(intent);
 	}
-
 
 }

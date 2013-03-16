@@ -6,28 +6,30 @@
     <string name="hello_world">Hello world!</string>
     <string name="categories">List of Categories</string>
     <string name="desc">image description</string>
-    <string name="topic1desc">Words Words</string>
-    <string name="topic2desc">Words Words Words Words </string>
-    <string name="topic3desc">Words Words Words Words Words Words Words </string>
-    <string name="topic4desc">Words Words Words Words Words Words Words Words </string>
-    <string name="topic5desc">Words Words Words Words Words Words Words Words Words </string>
-    <string name="topic6desc">Words Words Words Words Words Words Words Words Words Words </string>
+    <string name="help_virus">Remove A Virus</string>
+    <string name="help_slow">Is Your Computer Slow?</string>
+    <string name="help_guard">Guard Your Children</string>
+    <string name="help_internet">Find Best Internet</string>
+    <string name="help_google">Search Google</string>
+    <string name="more_topics">More Topics</string>
     <string name="title_activity_category">Category</string>
-    <string name="title_category">Name of Category</string>
-    <string name="topic1title">Topic 1</string>
-    <string name="topic2title">Topic 2</string>
-    <string name="topic3title">Topic 3</string>
+    <string name="title_category">More Topics</string>
+    <string name="topic_title">Something Goes Here</string>
+    <string name="topic1title">Which one of you jerks drank my Arnold Palmer?</string>
+    <string name="topic2title">These tacos taste terrible!</string>
+    <string name="topic3title">Dumb joke number 3</string>
     <string name="title_activity_help_topic">HelpTopic</string>
-    <string name="topic_title">Removing Viruses</string>
-    
-    
+        
     <string name="topic_string_1">Viruses can plague the Windows OS on your PC. It can be costly to remove. Many times, you will have a virus on your computer and won’t know it until one rears its head. When try to remove it, and more often than not, you find a handful of other viruses.</string>
-	<string name="topic_string_2">What you might see on your PC if a virus is on your computer: your internet gets redirected to another web page you didn’t request; if your desktop icons disappear; if your programs do not open; if you have a new “anti-virus” program that you are unfamiliar with, most likely you are plagued. If your computer is slow. If your friends and contacts receive unintended emails from you, selling unheard of items, then you have been infected.</string>
-	<string name="topic_string_3">BUT, it’s not that difficult to remove. Follow the following steps</string>
+    <string name="topic_string_2">What you might see on your PC if a virus is on your computer: your internet gets redirected to another web page you didn’t request; if your desktop icons disappear; if your programs do not open; if you have a new “anti-virus” program that you are unfamiliar with, most likely you are plagued. If your computer is slow. If your friends and contacts receive unintended emails from you, selling unheard of items, then you have been infected.</string>
+    <string name="topic_string_3">BUT, it’s not that difficult to remove. Follow the following steps</string>
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Next</string>
+    <string name="button_topics">View Topics</string>
+    <string name="title_activity_page_virus">PageVirus</string>
+    <string name="title_activity_page_slow">PageSlow</string>
+    <string name="title_activity_page_gaurd">PageGaurd</string>
+    <string name="title_activity_page_internet">PageInternet</string>
+    <string name="title_activity_page_google">PageGoogle</string>
 
-	
-
-	<string name="button_previous">Previous</string>
-	<string name="button_next">Next</string>
-	<string name="button_topics">View Topics</string>
 </resources>

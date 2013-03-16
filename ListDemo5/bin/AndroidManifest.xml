@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.csumb.listdemo5.Category"
+            android:name="edu.csumb.listdemo5.PageMoreTopics"
             android:label="@string/title_activity_category"
             android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
             <meta-data
@@ -33,10 +33,50 @@
         <activity
             android:name="edu.csumb.listdemo5.HelpTopic"
             android:label="@string/title_activity_help_topic"
-            android:parentActivityName="edu.csumb.listdemo5.Category" >
+            android:parentActivityName="edu.csumb.listdemo5.PageMoreTopics" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.csumb.listdemo5.Category" />
+        </activity>
+        <activity
+            android:name="edu.csumb.listdemo5.PageVirus"
+            android:label="@string/title_activity_page_virus"
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.csumb.listdemo5.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.csumb.listdemo5.PageSlow"
+            android:label="@string/title_activity_page_slow"
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.csumb.listdemo5.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.csumb.listdemo5.PageGuard"
+            android:label="@string/title_activity_page_gaurd"
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.csumb.listdemo5.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.csumb.listdemo5.PageInternet"
+            android:label="@string/title_activity_page_internet"
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.csumb.listdemo5.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.csumb.listdemo5.PageGoogle"
+            android:label="@string/title_activity_page_google"
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.csumb.listdemo5.MainActivity" />
         </activity>
     </application>
 
