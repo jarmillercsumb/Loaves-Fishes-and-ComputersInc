@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/b2"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    <!--TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="Languages"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp" /-->
+
+    <Button
+        android:id="@+id/english_button"
+        android:layout_width="324dp"
+        android:layout_height="115dp"
+        android:layout_above="@+id/spanish_button"
+        android:layout_alignLeft="@+id/spanish_button"
+        android:layout_marginBottom="43dp"
+        android:text="English"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/spanish_button"
+        android:gravity="center"
+        android:src="@drawable/globe" />
+
+    <Button
+        android:id="@+id/spanish_button"
+        android:layout_width="324dp"
+        android:layout_height="115dp"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginTop="134dp"
+        android:text="Español"
+        android:textSize="30sp" />
+
+</RelativeLayout>
