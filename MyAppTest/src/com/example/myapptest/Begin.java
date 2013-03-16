@@ -12,7 +12,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 
-public class play extends Activity {
+public class Begin extends Activity {
 	Button b;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

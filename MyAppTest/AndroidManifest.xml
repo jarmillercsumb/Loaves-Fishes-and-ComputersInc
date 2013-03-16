@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.myapptest.play" android:label="@string/Main_Menu"></activity> 
+        <activity android:name="com.example.myapptest.Begin" android:label="@string/Main_Menu"></activity> 
         <activity android:name="com.example.myapptest.About"></activity>
         <activity android:name="com.example.myapptest.Location"></activity>
     </application>

@@ -1,7 +1,7 @@
 package com.example.myapptest;
 
 import com.example.myapptest.R;
-import com.example.myapptest.play;
+import com.example.myapptest.Begin;
 
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +45,7 @@ public class MainActivity extends Activity{
 		}
 	}
 	public void startApp(){
-		startActivity(new Intent(this, play.class));
+		startActivity(new Intent(this, Begin.class));
 	}
 	/*public void startHelp(){
 		startHelp(new Intent(this, help1.class));
