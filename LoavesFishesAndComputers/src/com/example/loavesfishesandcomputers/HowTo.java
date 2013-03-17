@@ -29,7 +29,7 @@ public class HowTo extends Activity {
 		loadSteps();
 		
 		TextView t = (TextView) findViewById(R.id.cat1);
-		t.setText(how2_info[current_step][2] + "\n\n" + total_steps);
+		t.setText(how2_info[current_step][3] + "\n\n" + total_steps);
 	}
 	
 	private void loadSteps() {
