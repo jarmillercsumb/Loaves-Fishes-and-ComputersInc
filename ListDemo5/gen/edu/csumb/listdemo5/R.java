@@ -43,7 +43,7 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_help_topic=0x7f030000;
-        public static final int activity_main=0x7f030001;
+        public static final int activity_how_tos=0x7f030001;
         public static final int activity_more_topics=0x7f030002;
         public static final int activity_page_google=0x7f030003;
         public static final int activity_page_guard=0x7f030004;
