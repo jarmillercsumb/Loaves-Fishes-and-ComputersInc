@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Help" >
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="21dp"
+            android:text="@string/Spanish_Email_string"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="@string/Spanish_Phone_Number"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <ImageButton
+            android:id="@+id/imageView1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="23dp"
+            android:background="@drawable/phone"
+            android:onClick="sendCall"
+            android:src="@drawable/no_back" />
+
+        <ImageButton
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/email"
+            android:onClick="sendEmail"
+            android:src="@drawable/no_back" />
+
+
+</RelativeLayout>

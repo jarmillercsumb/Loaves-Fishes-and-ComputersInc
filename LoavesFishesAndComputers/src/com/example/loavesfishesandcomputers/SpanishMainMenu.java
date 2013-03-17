@@ -15,7 +15,7 @@ public class SpanishMainMenu extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_mainmenu);
+		setContentView(R.layout.activity_spanish_main_menu);
 		this.setTitle("Principal Menu");
 		b = (Button) findViewById(R.id.AboutButton);
 		b.setOnClickListener(new ButtonListener());
@@ -45,7 +45,7 @@ public class SpanishMainMenu extends Activity {
 		startActivity(new Intent(this, SpanishAbout.class));
 	}
 	public void startHelp(){
-		startActivity(new Intent(this, Help.class));
+		startActivity(new Intent(this, SpanishHelp.class));
 	}
 
 

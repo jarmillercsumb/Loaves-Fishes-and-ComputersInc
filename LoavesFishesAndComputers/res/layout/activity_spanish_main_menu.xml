@@ -6,27 +6,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/beige"
+    android:background="@drawable/b2s"
     
     tools:context=".Begin" >
-    <Button
-        android:id="@+id/HowToButton"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="90dp"
-         android:textSize="30sp" 
-        android:text="Cómo a páginas" />
-
-    <Button
-        android:id="@+id/HelpButton"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="91dp"
-         android:textSize="30sp" 
-        android:text="Ayudar!" />
 
     <Button
         android:id="@+id/AboutButton"
@@ -37,5 +19,35 @@
         android:layout_alignRight="@+id/HowToButton"
          android:textSize="30sp" 
         android:text="Acerca" />
+
+    <Button
+        android:id="@+id/HowToButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/HelpButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:text="Cómo hacer páginas"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/HelpButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="16dp"
+        android:text="Ayudar!"
+        android:textSize="30sp" />
+   <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/AboutButton"
+         android:layout_below="@+id/AboutButton"
+         android:text="ADVERTENCIA: Loaves, Fishes y Computers Inc. no es responsable por ninguna pérdida o daño de información de ninguna manera al usar esta aplicación."
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textSize="10dp" />
 
 </RelativeLayout>

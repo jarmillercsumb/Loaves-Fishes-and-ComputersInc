@@ -6,7 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_language">Language</string>
     <string name="title_activity_help">Help</string>
-    <string name="Phone_Number">Phone Number: (831)-393-9260</string>
+    <string name="Spanish_Phone_Number">Número de Teléfono: (831)-393-9260</string>
     <string name="Email_string">E-Mail: info@loavesfishescomputer.org \n \n Click the icons below to \n call or email</string>
     <string name="disclaimer">Loaves, Fishes, and Computers Inc. is not responsible for any data lost or damages of any kind from using this application.</string>
     <string name="Main_Menu">Main Menu</string>
@@ -14,5 +14,11 @@
     <string name="LocationText">You\'ll find us at: \n 348 Roberts Ave \n Seaside, CA, 93955</string>
     <string name="SpanishAboutText">La mision principal de Loaves, Fishes and Computers, Inc. es proveer computadoras, conocimiento y asistencia técnica a aquellos quienes de alguna manera no pueden permitirse estos servicios, primordialmente familias de bajos ingresos, estudiantes, los menos afortunados, aquellos de la tercera edad y discapacitados. \n \n Manteniendo computadoras fuera de nuestro ecosistema, LFC promueve la protección del medio ambiente, simultáneamente proporcionando un lugar a voluntarios para aprender, compartir y ayudar a su comunidad. \n \n Enviar email a: info@loavesfishescomputers.org</string>
     <string name="title_activity_spanish_main_menu">SpanishMainMenu</string>
+    <string name="title_activity_spanish_help">SpanishHelp</string>
+    <string name="Phone_Number">Phone Number: (831)-393-9260</string>
+    <string name="Spanish_Email_string">E-Mail: info@loavesfishescomputer.org \n \nHaga clic en los iconos debajo de llamar o mandar un correo electrónico</string>
+    <string name="title_activity_spanish_location">SpanishLocation</string>
+    <string name="SpanishLocationText">Usted nos encontrará en: \n 348 Roberts Ave \n Seaside, CA, 93955</string>
+    
 
 </resources>

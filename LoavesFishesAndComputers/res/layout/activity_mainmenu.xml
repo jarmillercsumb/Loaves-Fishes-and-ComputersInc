@@ -6,27 +6,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/beige"
+    android:background="@drawable/mainmenupic"
     
     tools:context=".Begin" >
-    <Button
-        android:id="@+id/HowToButton"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="90dp"
-         android:textSize="30sp" 
-        android:text="How-To's" />
-
-    <Button
-        android:id="@+id/HelpButton"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="91dp"
-         android:textSize="30sp" 
-        android:text="Help!" />
 
     <Button
         android:id="@+id/AboutButton"
@@ -37,5 +19,36 @@
         android:layout_alignRight="@+id/HowToButton"
          android:textSize="30sp" 
         android:text="About" />
+
+    <Button
+        android:id="@+id/HowToButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/HelpButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:text="How-To&apos;s"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/HelpButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="16dp"
+        android:text="Help!"
+        android:textSize="30sp" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/AboutButton"
+         android:layout_below="@+id/AboutButton"
+         android:text="DISCLAIMER: Loaves, Fishes, and Computers Inc. is not responsible for any data lost or damages of any kind from using this application."
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textSize="10dp" />
 
 </RelativeLayout>

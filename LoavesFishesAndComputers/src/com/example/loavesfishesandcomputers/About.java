@@ -43,10 +43,10 @@ public class About extends Activity {
 		startActivity(new Intent(this, Location.class));
 	}
 	public void startDonate(View v){
-		Intent websiteIntent = new Intent(Intent.ACTION_VIEW);
 		Uri uri = Uri.parse("http://www.loavesfishescomputers.org/become-a-tech-angel.html");
-		websiteIntent.setData(uri);
-		startActivity(websiteIntent);
+		Intent intent = new Intent(Intent.ACTION_VIEW, uri); 
+		startActivity(intent);
+
 	}
 
 }
