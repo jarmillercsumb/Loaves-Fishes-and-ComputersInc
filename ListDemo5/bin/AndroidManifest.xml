@@ -6,8 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
-	<uses-permission android:name="android.permission.INTERNET"/>
+        android:targetSdkVersion="8" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="edu.csumb.listdemo5.HowTos"
+            android:name="edu.csumb.listdemo5.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +25,7 @@
         <activity
             android:name="edu.csumb.listdemo5.PageMoreTopics"
             android:label="@string/title_activity_category"
-            android:parentActivityName="edu.csumb.listdemo5.HowTos" >
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.csumb.listdemo5.MainActivity" />
@@ -42,7 +41,7 @@
         <activity
             android:name="edu.csumb.listdemo5.PageVirus"
             android:label="@string/title_activity_page_virus"
-            android:parentActivityName="edu.csumb.listdemo5.HowTos" >
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.csumb.listdemo5.MainActivity" />
@@ -50,7 +49,7 @@
         <activity
             android:name="edu.csumb.listdemo5.PageSlow"
             android:label="@string/title_activity_page_slow"
-            android:parentActivityName="edu.csumb.listdemo5.HowTos" >
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.csumb.listdemo5.MainActivity" />
@@ -58,7 +57,7 @@
         <activity
             android:name="edu.csumb.listdemo5.PageGuard"
             android:label="@string/title_activity_page_gaurd"
-            android:parentActivityName="edu.csumb.listdemo5.HowTos" >
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.csumb.listdemo5.MainActivity" />
@@ -66,7 +65,7 @@
         <activity
             android:name="edu.csumb.listdemo5.PageInternet"
             android:label="@string/title_activity_page_internet"
-            android:parentActivityName="edu.csumb.listdemo5.HowTos" >
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.csumb.listdemo5.MainActivity" />
@@ -74,7 +73,7 @@
         <activity
             android:name="edu.csumb.listdemo5.PageGoogle"
             android:label="@string/title_activity_page_google"
-            android:parentActivityName="edu.csumb.listdemo5.HowTos" >
+            android:parentActivityName="edu.csumb.listdemo5.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.csumb.listdemo5.MainActivity" />
