@@ -38,6 +38,12 @@
         </activity>
         <activity android:name="com.example.loavesfishesandcomputers.Location" >
         </activity>
+        <activity 
+            android:name="com.example.loavesfishesandcomputers.HowTo"
+            android:parentActivityName="com.example.loavesfishesandcomputers.HowTos" >
+        </activity>
+        <activity android:name="com.example.loavesfishesandcomputers.HowTos" >
+        </activity>
         <activity
             android:name="com.example.loavesfishesandcomputers.SpanishMainMenu"
             android:label="@string/title_activity_spanish_main_menu" >

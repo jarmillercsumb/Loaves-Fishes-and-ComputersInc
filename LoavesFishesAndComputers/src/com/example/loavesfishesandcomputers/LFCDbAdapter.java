@@ -219,27 +219,29 @@ public class LFCDbAdapter {
     	Cursor c = fetchHow2s();
     	
     	Integer i=null;
-    	how2s = new String[c.getCount()][];
+    	how2s = new String[c.getCount()][4];
     	for (i=0; i<c.getCount(); i++) {
     		c.moveToPosition(i);
-    		how2s[i][0] = c.getString(c.getColumnIndexOrThrow("title"));
-    		how2s[i][1] = c.getString(c.getColumnIndexOrThrow("tagline"));
-    		how2s[i][2] = c.getString(c.getColumnIndexOrThrow("image"));
+    		how2s[i][0] = c.getString(c.getColumnIndexOrThrow("how2_id"));
+    		how2s[i][1] = c.getString(c.getColumnIndexOrThrow("title"));
+    		how2s[i][2] = c.getString(c.getColumnIndexOrThrow("tagline"));
+    		how2s[i][3] = c.getString(c.getColumnIndexOrThrow("image"));
     	}
     	return true;
     }
     
     protected boolean buildHow2info(Integer how2) {
-    	Cursor c = fetchHow2(how2);
+    	Cursor c = fetchHow2Steps(how2);
     	
     	Integer i=null;
-    	how2info = new String[c.getCount()][];
+    	how2info = new String[c.getCount()][5];
     	for (i=0; i<c.getCount(); i++) {
     		c.moveToPosition(i);
     		how2info[i][0] = c.getString(c.getColumnIndexOrThrow("how2_id"));
-    		how2info[i][1] = c.getString(c.getColumnIndexOrThrow("title"));
-    		how2info[i][2] = c.getString(c.getColumnIndexOrThrow("body"));
-    		how2info[i][3] = c.getString(c.getColumnIndexOrThrow("position"));
+    		how2info[i][1] = c.getString(c.getColumnIndexOrThrow("how2_step_id"));
+    		how2info[i][2] = c.getString(c.getColumnIndexOrThrow("title"));
+    		how2info[i][3] = c.getString(c.getColumnIndexOrThrow("body"));
+    		how2info[i][4] = c.getString(c.getColumnIndexOrThrow("position"));
     	}
     	return true;
     }
@@ -365,7 +367,7 @@ public class LFCDbAdapter {
 			    for (int j = 0 ; j < currentItemStepsArray.length() ; j ++)
 			    {
 			    	JSONObject currentStep = currentItemStepsArray.getJSONObject(j);
-			    	if ((itemid = checkHow2ID(currentItem.getString("id"))) > 0) {
+			    	if ((itemid = checkHow2ID(currentStep.getString("id"))) > 0) {
 			    		updateHow2Step(currentStep.getString("id"), currentStep.getString("how_to_id"), currentStep.getString("title"), currentStep.getString("body"), currentStep.getString("position"));
 					} else {
 						createHow2Step(currentStep.getString("id"), currentStep.getString("how_to_id"), currentStep.getString("title"), currentStep.getString("body"), currentStep.getString("position"));
