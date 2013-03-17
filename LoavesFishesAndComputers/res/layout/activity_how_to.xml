@@ -8,78 +8,71 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".HowTo" >
 
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" >
-
+    
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-            
-            		<TextView
-		    android:id="@+id/title_categories"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_marginBottom="20dp"
-		    android:layout_gravity="center"
-		    android:textSize="20sp"
-		    android:text="help_virus" />
-            		
-            		
-            <!-- <ImageView
-
-			    android:id="@+id/image"
-			    android:layout_width="match_parent"
-			    android:layout_height="match_parent"
-			    android:scaleType="center"
-			    android:src="@drawable/virus" />-->
-            
-            
-            <TextView
-			android:id="@+id/cat1"
-			android:layout_marginLeft="10dp"
+	    android:id="@+id/buttons"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true" >
+		
+        <Button
+	        android:id="@+id/button_p"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="topic_string_1"
-	        android:clickable="true"
-	        android:textSize="12sp"
-	        android:onClick="goToCategory" />
-            
+	        android:layout_weight="33"
+	        android:enabled="false"
+	        android:text="@string/prev_button" />
+        <Button
+	        android:id="@+id/button_n"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="33"
+	        android:text="@string/next_button" />
+
+        <Button
+	        android:id="@+id/button_t"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="33"
+	        android:text="@string/topics_button" />
+        
+    	</LinearLayout>
+    	
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-            
-            
-            
-            <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button_previous" 
-        android:onClick="prevPage"/>
-            
-            <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button_next" 
-        android:onClick="nextPage"/>
-            
-            <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button_topics" 
-        android:onClick="topicsPage" />
-		</LinearLayout>
-
+            android:id="@+id/title"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+		<TextView
+		    android:id="@+id/topic_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="10dp"
+		    android:layout_gravity="center"
+		    android:textSize="20sp"
+		    android:text="@string/insert_title" />
         </LinearLayout>
+		<ScrollView
+	        android:layout_above="@id/buttons"
+	        android:layout_below="@+id/title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:fillViewport="true" >
+			
+			<!--  <LinearLayout
+			    android:id="@+id/how_to_content"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	        -->
 
-        
-        
-        </ScrollView>
-
+			<TextView
+			    android:id="@+id/topic_content"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/insert_content"  /> 
+	     </ScrollView>
 
 </RelativeLayout>

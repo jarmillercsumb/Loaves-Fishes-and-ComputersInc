@@ -210,7 +210,7 @@ public class LFCDbAdapter {
     }
     
     protected Cursor fetchHow2s() {
-    	return mDb.rawQuery("select * from "+DATABASE_HOW2_TABLE+"",null);
+    	return mDb.rawQuery("select * from "+DATABASE_HOW2_TABLE+" WHERE language='en'",null);
     }
     
     protected Cursor fetchHow2Steps(Integer how2) {
@@ -252,7 +252,7 @@ public class LFCDbAdapter {
     	Cursor c = mDb.rawQuery("select * from "+DATABASE_HOW2_STEPS_TABLE+" where how2_id='" + Integer.toString(how2) + "'",null);
     	
     	int return_val = 0;
-    	return_val = c.getCount();
+    	return_val = c.getCount() - 1;
     	
     	return return_val;
     }

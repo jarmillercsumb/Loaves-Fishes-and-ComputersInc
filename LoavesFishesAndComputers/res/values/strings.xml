@@ -24,6 +24,13 @@
 
     <string name="categories">Help Topics</string>
     <string name="title_activity_help_page">Help Page</string>
+    
+    <string name="prev_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="topics_button">Help Topics</string>
+    
+    <string name="insert_title">Insert Title</string>
+    <string name="insert_content">Insert Content</string>
 
 
 </resources>
