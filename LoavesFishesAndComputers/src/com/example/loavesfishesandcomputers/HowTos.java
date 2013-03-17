@@ -1,7 +1,7 @@
 
 package com.example.loavesfishesandcomputers;
-import com.example.loavesfishesandcomputers.R;
 
+import com.example.loavesfishesandcomputers.R;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -34,7 +34,7 @@ public class HowTos extends Activity {
 			View newView = getLayoutInflater().inflate(R.layout.item_template, mainLayout, false);
 			mainLayout.addView(newView);
 			
-
+			
 			TextView t = (TextView) newView.findViewById(R.id.cat1);
 			t.setCompoundDrawablesWithIntrinsicBounds(R.drawable.pic2, 0, 0, 0);
 			t.setText(entries[i][1] + "\n\n"+ entries[i][2]);

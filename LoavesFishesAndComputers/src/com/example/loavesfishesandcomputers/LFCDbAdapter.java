@@ -67,25 +67,26 @@ public class LFCDbAdapter {
     private static final String DATABASE_CREATE1 =
 			"create table "+DATABASE_HOW2_TABLE+" ("
 				+ " _id integer primary key autoincrement,"
-				+ " how2_id text not null,"
-				+ " title text not null,"
-				+ " tagline text not null,"
-				+ " body text not null,"
-				+ " last_updated text not null,"
-				+ " image text not null);";
+				+ " how2_id text,"
+				+ " title text,"
+				+ " tagline text,"
+				+ " body text,"
+				+ " last_updated text,"
+				+ " language text,"
+				+ " image text);";
     private static final String DATABASE_CREATE2 =
 			"create table "+DATABASE_HOW2_STEPS_TABLE+" ("
 				+ " _id integer primary key autoincrement,"
-				+ " how2_id text not null,"
-				+ " how2_step_id text not null,"
-				+ " title text not null,"
-				+ " body text not null,"
-				+ " position text not null);";
+				+ " how2_id text,"
+				+ " how2_step_id text,"
+				+ " title text,"
+				+ " body text,"
+				+ " position text);";
     private static final String DATABASE_CREATE3 =
 			"create table "+DATABASE_CATEGORY_TABLE+" ("
 				+ " _id integer primary key autoincrement,"
-				+ " category text not null,"
-				+ " last_modified text not null"
+				+ " category text,"
+				+ " last_modified text"
 				+ ");";
     private static final String DATABASE_CREATE4 =
 			"create table "+DATABASE_HOW2_CAT_TABLE+" ("
@@ -162,7 +163,7 @@ public class LFCDbAdapter {
      * @return rowId or -1 if failed
      */
     
-    public long createHow2(String how2_id, String title, String tagline, String body, String image, String last_updated) {
+    public long createHow2(String how2_id, String title, String tagline, String body, String image, String last_updated, String language) {
         ContentValues initialValues = new ContentValues();
         initialValues.put("how2_id", how2_id);
         initialValues.put("title", title);
@@ -170,6 +171,7 @@ public class LFCDbAdapter {
         initialValues.put("body", body);
         initialValues.put("image", image);
         initialValues.put("last_updated", last_updated);
+        initialValues.put("language", language);
         
         return mDb.insert(DATABASE_HOW2_TABLE, null, initialValues);
     }
@@ -197,11 +199,11 @@ public class LFCDbAdapter {
     }
     
     // was used before to clean up database for resetting. Now marked private to avoid accidentally emptying the database.
-    /*private boolean cleanup() {
+    public boolean cleanup() {
     	mDb.delete(DATABASE_HOW2_TABLE,null,null);
     	mDb.delete(DATABASE_HOW2_STEPS_TABLE,null,null);
     	return true;
-    }*/
+    }
     
     protected Cursor fetchHow2(Integer how2) {
     	return mDb.rawQuery("select * from "+DATABASE_HOW2_TABLE+" where _id='"+Integer.toString(how2)+"'",null);
@@ -301,7 +303,7 @@ public class LFCDbAdapter {
     	return return_val; 
     }
 
-    public boolean updateHow2(String how2_id, String title, String tagline, String body, String image, String last_updated) {
+    public boolean updateHow2(String how2_id, String title, String tagline, String body, String image, String last_updated, String language) {
         ContentValues initialValues = new ContentValues();
         initialValues.put("how2_id", how2_id);
         initialValues.put("title", title);
@@ -309,6 +311,7 @@ public class LFCDbAdapter {
         initialValues.put("body", body);
         initialValues.put("image", image);
         initialValues.put("last_updated", last_updated);
+        initialValues.put("language", language);
 
         return mDb.update(DATABASE_HOW2_TABLE, initialValues, "how2_id=" + how2_id, null) > 0;
     }
@@ -351,27 +354,27 @@ public class LFCDbAdapter {
 		}
 		
 		Long itemid = null;
+		cleanup();
 		try {
 			JSONArray mainArray = new JSONArray(writer.toString());
-			System.out.print(mainArray);
 			for (int i = 0 ; i < mainArray.length() ; i ++)
 			{
 				JSONObject currentItem = mainArray.getJSONObject(i);
-				if ((itemid = checkHow2ID(currentItem.getString("id"))) > 0) {
-					updateHow2(currentItem.getString("id"), currentItem.getString("title"), currentItem.getString("tagline"), currentItem.getString("body"), currentItem.getString("image"), currentItem.getString("last_updated"));
-				} else {
-					itemid = createHow2(currentItem.getString("id"), currentItem.getString("title"), currentItem.getString("tagline"), currentItem.getString("body"), currentItem.getString("image"), currentItem.getString("last_updated"));
-				}
+				//if ((itemid = checkHow2ID(currentItem.getString("id"))) > 0) {
+				//	updateHow2(currentItem.getString("id"), currentItem.getString("title"), currentItem.getString("tagline"), currentItem.getString("body"), currentItem.getString("image"), currentItem.getString("last_updated"), currentItem.getString("language"));
+				//} else {
+					itemid = createHow2(currentItem.getString("id"), currentItem.getString("title"), currentItem.getString("tagline"), currentItem.getString("body"), currentItem.getString("image"), currentItem.getString("last_updated"), currentItem.getString("language"));
+				//}
 			    
 			    JSONArray currentItemStepsArray = currentItem.getJSONArray("steps"); 
 			    for (int j = 0 ; j < currentItemStepsArray.length() ; j ++)
 			    {
 			    	JSONObject currentStep = currentItemStepsArray.getJSONObject(j);
-			    	if ((itemid = checkHow2ID(currentStep.getString("id"))) > 0) {
-			    		updateHow2Step(currentStep.getString("id"), currentStep.getString("how_to_id"), currentStep.getString("title"), currentStep.getString("body"), currentStep.getString("position"));
-					} else {
+			    	//if ((itemid = checkHow2ID(currentStep.getString("id"))) > 0) {
+			    	//	updateHow2Step(currentStep.getString("id"), currentStep.getString("how_to_id"), currentStep.getString("title"), currentStep.getString("body"), currentStep.getString("position"));
+					//} else {
 						createHow2Step(currentStep.getString("id"), currentStep.getString("how_to_id"), currentStep.getString("title"), currentStep.getString("body"), currentStep.getString("position"));
-					}
+					//}
 			    	
 			    }
 			}

@@ -18,14 +18,27 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Handler handler = new Handler();
-	    handler.postDelayed(new Runnable() {
-	        public void run() {
-	            finish();
-	            Intent i3 = new Intent(MainActivity.this, Language.class);
-	                startActivity(i3);
-	        }
-	    }, _splashTime);
+		
+		Thread timer = new Thread(){
+			public void run(){
+				try{		
+
+					LFCDbAdapter db = new LFCDbAdapter(MainActivity.this);
+					db.open();
+					db.urlCall();
+					db.close();			
+					sleep(_splashTime);
+				} catch (InterruptedException e){
+					e.printStackTrace();
+				}finally{
+					Intent intent = new Intent(MainActivity.this, Language.class);
+				    startActivity(intent);
+					//View v = null;
+					//MainActivity2.this.sendMessage(v);
+				}
+			}
+		};
+		timer.start();
 	}
 	
 

@@ -19,9 +19,7 @@ public class MainActivity2 extends Activity {
 
 					LFCDbAdapter db = new LFCDbAdapter(MainActivity2.this);
 					db.open();
-					
 					db.urlCall();
-					
 					db.close();			
 					sleep(5000);
 				} catch (InterruptedException e){
