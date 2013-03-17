@@ -26,9 +26,15 @@
         android:layout_height="80dp"
         android:layout_alignLeft="@+id/HelpButton"
         android:layout_alignParentTop="true"
+
         android:layout_marginTop="63dp"
-        android:text="How-To&apos;s"
-        android:textSize="30sp" />
+        android:text="How-To\'s"
+        android:textSize="30sp"
+		 android:layout_marginTop="90dp"
+         android:textSize="30sp" 
+         android:onClick="showHowTos"
+        android:text="How-To's" />
+
 
     <Button
         android:id="@+id/HelpButton"

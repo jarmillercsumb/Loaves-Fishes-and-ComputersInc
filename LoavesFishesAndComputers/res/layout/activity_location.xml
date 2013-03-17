@@ -24,6 +24,7 @@
         android:layout_height="350dp"
         android:layout_alignLeft="@+id/AboutTextView"
         android:layout_alignParentBottom="true"
+        android:onClick="clickMap"
         android:src="@drawable/lfcmap" />
     
 </RelativeLayout>

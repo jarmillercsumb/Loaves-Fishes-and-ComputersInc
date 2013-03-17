@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/layout_item_id2">
+ 
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="2Hello, this is the inflated text2 :D"
+              android:layout_gravity="center"
+              android:gravity="center_horizontal"
+              android:id="@+id/text_item_id"/>
+ 
+</LinearLayout>

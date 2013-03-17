@@ -1,6 +1,8 @@
 
 package com.example.loavesfishesandcomputers;
 import com.example.loavesfishesandcomputers.R;
+
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,5 +26,11 @@ public class Location extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	public void clickMap() {
+		String uri = "geo:0,0?q=348 Roberts Ave, Seaside, CA";
+		Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+		startActivity(intent);
 	}
 }

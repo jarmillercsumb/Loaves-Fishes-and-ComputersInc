@@ -43,6 +43,9 @@ public class MainMenu extends Activity {
 			
 		}
 	}
+	public void showHowTos(View v) {
+		startActivity(new Intent(this, HowTos.class));
+	}
 	public void startAbout(){
 		startActivity(new Intent(this, About.class));
 	}
