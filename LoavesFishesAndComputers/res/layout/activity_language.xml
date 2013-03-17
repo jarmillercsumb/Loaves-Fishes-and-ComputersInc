@@ -44,6 +44,7 @@
         android:layout_alignTop="@+id/textView2"
         android:layout_marginTop="134dp"
         android:text="Español"
+        android:onClick="sendMessage"
         android:textSize="30sp" />
 
 </RelativeLayout>

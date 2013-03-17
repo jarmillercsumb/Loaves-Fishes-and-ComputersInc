@@ -21,8 +21,15 @@ public class Language extends Activity {
 		return true;
 	}
 	public void sendMessage(View view) {
-	    Intent intent = new Intent(this, Help.class);
-	    startActivity(intent);
+		if(view.getId()==R.id.english_button){
+			Intent intent = new Intent(this, MainMenu.class);
+			startActivity(intent);
+		}
+		if(view.getId()==R.id.spanish_button){
+			Intent intent = new Intent(this, SpanishMainMenu.class);
+			startActivity(intent);
+		}
+	    
 	}
 
 }
