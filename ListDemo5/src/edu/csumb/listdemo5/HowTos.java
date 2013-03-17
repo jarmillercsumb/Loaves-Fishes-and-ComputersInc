@@ -11,12 +11,12 @@ import android.view.View;
 import android.content.Intent;
 /*import android.widget.EditText; */
 
-public class MainActivity extends Activity {
+public class HowTos extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_how_tos);
 		// Show the Up button in the action bar.
 		setupActionBar();
 	}
