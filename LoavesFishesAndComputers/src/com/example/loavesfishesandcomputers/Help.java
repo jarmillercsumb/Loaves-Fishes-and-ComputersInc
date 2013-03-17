@@ -50,6 +50,24 @@ public class Help extends Activity {
 		intent.setData(Uri.parse(num));
 		startActivity(intent);
 	}
+	public void startFB(View v){
+		Uri uri = Uri.parse("https://www.facebook.com/loavesfishescomputers?fref=ts");
+		Intent intent = new Intent(Intent.ACTION_VIEW, uri); 
+		startActivity(intent);
+
+	}
+	public void startTwit(View v){
+		Uri uri = Uri.parse("https://twitter.com/lfcomputers");
+		Intent intent = new Intent(Intent.ACTION_VIEW, uri); 
+		startActivity(intent);
+
+	}
+	public void startWeb(View v){
+		Uri uri = Uri.parse("http://www.loavesfishescomputers.org/index.html");
+		Intent intent = new Intent(Intent.ACTION_VIEW, uri); 
+		startActivity(intent);
+
+	}
 	
 
 }
