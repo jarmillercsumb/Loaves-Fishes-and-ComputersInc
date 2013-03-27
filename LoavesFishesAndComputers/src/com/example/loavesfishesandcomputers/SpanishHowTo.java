@@ -16,7 +16,7 @@ import android.view.View.OnClickListener;
 import android.content.Intent;
 import android.os.Build;
 
-public class HowTo extends Activity {
+public class SpanishHowTo extends Activity {
 	protected Integer how2_id;
 	protected String[][] how2_info;
 	protected Integer current_step = 0;
@@ -30,7 +30,7 @@ public class HowTo extends Activity {
     	Intent i = getIntent();
     	how2_id = i.getIntExtra("id", 0);
     	
-		setContentView(R.layout.activity_how_to);
+		setContentView(R.layout.activity_spanish_how_to);
 		// Show the Up button in the action bar.
 		setupActionBar();
 		loadSteps();
@@ -49,7 +49,7 @@ public class HowTo extends Activity {
 
 	
 	private void loadSteps() {
-		LFCDbAdapter db = new LFCDbAdapter(HowTo.this);
+		LFCDbAdapter db = new LFCDbAdapter(SpanishHowTo.this);
 		db.open();
 		how2_info = db.getHow2info(how2_id);
 		total_steps = db.countHow2Steps(how2_id);
@@ -79,7 +79,7 @@ public class HowTo extends Activity {
 	}
 	
 	public void showHowTos() {
-		startActivity(new Intent(this, HowTos.class));
+		startActivity(new Intent(this, SpanishHowTos.class));
 	}
 
 
@@ -96,7 +96,7 @@ public class HowTo extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.how_to, menu);
+		getMenuInflater().inflate(R.menu.spanish_how_to, menu);
 		return true;
 	}
 

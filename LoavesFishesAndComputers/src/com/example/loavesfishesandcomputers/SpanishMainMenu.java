@@ -41,6 +41,9 @@ public class SpanishMainMenu extends Activity {
 			
 		}
 	}
+	public void showHowTos(View v) {
+		startActivity(new Intent(this, SpanishHowTos.class));
+	}
 	public void startAbout(){
 		startActivity(new Intent(this, SpanishAbout.class));
 	}

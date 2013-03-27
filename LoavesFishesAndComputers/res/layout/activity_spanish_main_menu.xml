@@ -17,7 +17,7 @@
         android:layout_alignBaseline="@+id/HelpButton"
         android:layout_alignBottom="@+id/HelpButton"
         android:layout_alignRight="@+id/HowToButton"
-         android:textSize="30sp" 
+        android:textSize="30sp" 
         android:text="Acerca" />
 
     <Button
@@ -28,6 +28,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="63dp"
         android:text="Cómo hacer páginas"
+        android:onClick="showHowTos"
         android:textSize="30sp" />
 
     <Button

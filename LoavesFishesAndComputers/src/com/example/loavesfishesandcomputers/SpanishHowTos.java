@@ -12,12 +12,12 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ScaleDrawable;
 import android.view.Menu;
 
-public class HowTos extends Activity {
+public class SpanishHowTos extends Activity {
 	String[][] entries;
 	
 	public void makeEntries ()
 	{
-		LFCDbAdapter db = new LFCDbAdapter(HowTos.this);
+		LFCDbAdapter db = new LFCDbAdapter(SpanishHowTos.this);
 		db.open();
 		entries = db.getHow2s();
 		db.close();
@@ -26,7 +26,7 @@ public class HowTos extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_how_tos);
+		setContentView(R.layout.activity_spanish_how_tos);
 		
 		makeEntries();
 		setTitle("How Tos");
@@ -79,14 +79,14 @@ public class HowTos extends Activity {
 	}
 	
 	public void getPage(View view) {
-		Intent intent = new Intent(this, HowTo.class);
+		Intent intent = new Intent(this, SpanishHowTo.class);
 		intent.putExtra("id", view.getId());
 	    startActivity(intent);
 	}
 	
 	public void onBackPressed() {
 		
-		Intent intent = new Intent(this, MainMenu.class);
+		Intent intent = new Intent(this, SpanishMainMenu.class);
 	    startActivity(intent);
 	}
 

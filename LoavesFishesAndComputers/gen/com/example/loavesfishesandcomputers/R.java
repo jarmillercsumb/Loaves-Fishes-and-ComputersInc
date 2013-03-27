@@ -28,25 +28,32 @@ public final class R {
         public static final int basket2=0x7f020004;
         public static final int beige=0x7f020005;
         public static final int but=0x7f020006;
-        public static final int donate=0x7f020007;
-        public static final int email=0x7f020008;
-        public static final int fb=0x7f020009;
-        public static final int globe=0x7f02000a;
-        public static final int ic_launcher=0x7f02000b;
-        public static final int icon222=0x7f02000c;
-        public static final int internet=0x7f02000d;
-        public static final int lfcmap=0x7f02000e;
-        public static final int logo=0x7f02000f;
-        public static final int logo_2=0x7f020010;
-        public static final int logo_basket=0x7f020011;
-        public static final int logo_copy=0x7f020012;
-        public static final int mainmenupic=0x7f020013;
-        public static final int no_back=0x7f020014;
-        public static final int phone=0x7f020015;
-        public static final int pic1=0x7f020016;
-        public static final int pic2=0x7f020017;
-        public static final int tutorial_button=0x7f020018;
-        public static final int twit=0x7f020019;
+        public static final int cheapinternet=0x7f020007;
+        public static final int donate=0x7f020008;
+        public static final int ehow=0x7f020009;
+        public static final int email=0x7f02000a;
+        public static final int fb=0x7f02000b;
+        public static final int fixit=0x7f02000c;
+        public static final int globe=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int icon222=0x7f02000f;
+        public static final int internet=0x7f020010;
+        public static final int internetspeed=0x7f020011;
+        public static final int lfcmap=0x7f020012;
+        public static final int lock=0x7f020013;
+        public static final int logo=0x7f020014;
+        public static final int logo_2=0x7f020015;
+        public static final int logo_basket=0x7f020016;
+        public static final int logo_copy=0x7f020017;
+        public static final int mainmenupic=0x7f020018;
+        public static final int no_back=0x7f020019;
+        public static final int phone=0x7f02001a;
+        public static final int pic1=0x7f02001b;
+        public static final int pic2=0x7f02001c;
+        public static final int tuneup=0x7f02001d;
+        public static final int tutorial_button=0x7f02001e;
+        public static final int twit=0x7f02001f;
+        public static final int virus=0x7f020020;
     }
     public static final class id {
         public static final int AboutButton=0x7f08001a;
@@ -95,10 +102,13 @@ public final class R {
         public static final int activity_mainmenu=0x7f030008;
         public static final int activity_spanish_about=0x7f030009;
         public static final int activity_spanish_help=0x7f03000a;
-        public static final int activity_spanish_location=0x7f03000b;
-        public static final int activity_spanish_main_menu=0x7f03000c;
-        public static final int item_template=0x7f03000d;
-        public static final int item_template_2=0x7f03000e;
+        public static final int activity_spanish_how_to=0x7f03000b;
+        public static final int activity_spanish_how_tos=0x7f03000c;
+        public static final int activity_spanish_location=0x7f03000d;
+        public static final int activity_spanish_main_menu=0x7f03000e;
+        public static final int bluebutton=0x7f03000f;
+        public static final int item_template=0x7f030010;
+        public static final int item_template_2=0x7f030011;
     }
     public static final class menu {
         public static final int begin=0x7f070000;
@@ -107,8 +117,10 @@ public final class R {
         public static final int language=0x7f070003;
         public static final int main=0x7f070004;
         public static final int spanish_help=0x7f070005;
-        public static final int spanish_location=0x7f070006;
-        public static final int spanish_main_menu=0x7f070007;
+        public static final int spanish_how_to=0x7f070006;
+        public static final int spanish_how_tos=0x7f070007;
+        public static final int spanish_location=0x7f070008;
+        public static final int spanish_main_menu=0x7f070009;
     }
     public static final class string {
         public static final int AboutText=0x7f050009;
@@ -133,6 +145,8 @@ public final class R {
         public static final int title_activity_help_page=0x7f050013;
         public static final int title_activity_language=0x7f050003;
         public static final int title_activity_spanish_help=0x7f05000d;
+        public static final int title_activity_spanish_how_to=0x7f050019;
+        public static final int title_activity_spanish_how_tos=0x7f05001a;
         public static final int title_activity_spanish_location=0x7f050010;
         public static final int title_activity_spanish_main_menu=0x7f05000c;
         public static final int topics_button=0x7f050016;

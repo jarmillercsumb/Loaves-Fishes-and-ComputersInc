@@ -8,9 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
-    <uses-permission android:name="android.permssion.CALL_PHONE"/>
-	<uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permssion.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -40,7 +39,7 @@
         </activity>
         <activity android:name="com.example.loavesfishesandcomputers.Location" >
         </activity>
-        <activity 
+        <activity
             android:name="com.example.loavesfishesandcomputers.HowTo"
             android:parentActivityName="com.example.loavesfishesandcomputers.HowTos" >
         </activity>
@@ -58,7 +57,16 @@
             android:name="com.example.loavesfishesandcomputers.SpanishLocation"
             android:label="@string/title_activity_spanish_location" >
         </activity>
-        <activity android:name="com.example.loavesfishesandcomputers.SpanishAbout"></activity>
+        <activity android:name="com.example.loavesfishesandcomputers.SpanishAbout" >
+        </activity>
+        <activity
+            android:name="com.example.loavesfishesandcomputers.SpanishHowTo"
+             android:parentActivityName="com.example.loavesfishesandcomputers.SpanishHowTos" >
+        </activity>
+        <activity
+            android:name="com.example.loavesfishesandcomputers.SpanishHowTos"
+            android:label="@string/title_activity_spanish_how_tos" >
+        </activity>
     </application>
 
 </manifest>
